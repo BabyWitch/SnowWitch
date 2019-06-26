@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #99FFFF;
+	background-image: url("img/backgroundimg.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+
+}
+.header_title{
+	text-align: center;
+	float: left;
+}
+.logo{
+	width: 30%;
+	margin: 10px 0;
+}
+
+.side_logo{
+	width: 8%;
+	margin: 20px 20px;
+}
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background:  rgba(255,255,255,0.5);
+    color: #ffffff;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+	width: 25%;
+}
+ 
+nav.globalMenuSp ul {
+	background-color: rgba(255, 255, 255,0.6);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+ 
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #333;
+}
+.button_content{
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 25%;
+    border-bottom: 1px dotted #333;
+}
+
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+ 
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+    text-decoration:none;
+}
+.button_content a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+    text-decoration:none;
+}
+
+nav.globalMenuSp.active {
+    transform: translateY(0%);
+}
+.navToggle {
+    display: block;
+    position: fixed;
+    left: 13px;
+    top: 12px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 10;
+    background: #666;
+    text-align: center;
+}
+ 
+.navToggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+ 
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+ 
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+ 
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+ 
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*#guide{
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+	margin: 2.4% 2%;
+}
+#guide a{
+	padding: 10px;
+	font-size: 1.3rem;
+	border:solid 1px;
+	margin: 5px;
+	text-decoration:none;
+    color: #16253d;
+}
+#guide .button:hover{
+	color: black;
+	background-color: rgba(247,247,12,0.4);
+}
+#guide .button_two:hover{
+	color: black;
+	background-color: rgba(16,239,122,0.5);
+}
+#guide .button_three:hover{
+	color: black;
+	background-color: rgba(250,250,250,0.5);
+}*/
+main{
+	overflow: auto;
+	padding: 10% 0 0 0;
+	background-image: url("img/backgroundimg.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+}
+#inner{
+	margin-top:-100px;
+	padding-top: 150px;
+}
+
+.button_aria{
+	padding-top: 100px;
+}
+.box{
+	margin: 0% 15% 5% 15%;
+	padding: 40px;
+}
+.box_two{
+	margin: 0% 15% 5% 15%;
+	padding: 40px;
+}
+.box_two a{
+	text-decoration:none;
+}
+.box a{
+	text-decoration:none;
+}
+.color{
+	background-color: rgba(247,247,12,0.4);
+}
+.color_two{
+	background-color: rgba(16,239,122,0.5);
+}
+.color_three{
+	background-color: rgba(250,250,250,0.5);
+}
+.title{
+	font-size: 1.7rem;
+	margin: 20px;
+	text-align: center;
+}
+.title a{
+	color: black;
+}
+.logo_one{
+	width: 15%;
+	float: left;
+	margin: 10px
+}
+.logo_two{
+	width: 20%;
+	float: left;
+	margin: 10px;
+}
+.logo_three{
+	width: 30%;
+	float: left;
+	margin: 10px 10px 40px 10px;
+}
+.text{
+	font-size: 1.2rem;
+}
+.access{
+	text-align: right;
+	margin: 20px 10px 0 10px;
+}
+.unit{
+	margin: 0 10px;
+	text-align: right;
+}
+footer{
+	position: fixed;
+    bottom: 0; 
+    width: 100%;
+    text-align: right;
+    background-color: #99FFFF;
+    background-image: url("img/backgroundimg.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+}
+footer p{
+	display: block;
+	margin: 30px 10px 0 10px;
+}
+i{
+	color: black;
+}
+footer a{
+	display: block;
+	margin: 0 10px 10px 10px;
+}
