@@ -8,4 +8,11 @@ $(function() {
             $('.globalMenuSp').removeClass('active');
         }
     });
+    $(function(){
+        $('.botton li').hover(function(){
+            $("ul:not(:animated)", this).slideDown();
+        }, function(){
+            $("ul.button_content",this).slideUp();
+        });
+    });
 });
