@@ -5,6 +5,7 @@
 html{
 	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
 }
+
 header{
 	position: fixed;
 	top: 0;
@@ -27,10 +28,6 @@ header{
 	width: 8%;
 	margin: 20px 20px;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -44,7 +41,6 @@ html,body {
 body {
 	font-size: 14px;
 	font-family: 'Lato','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-	background: #eee;
 }
 
 
