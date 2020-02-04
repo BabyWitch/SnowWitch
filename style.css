@@ -5,7 +5,9 @@
 html{
 	font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
 }
-
+a{
+	cursor: pointer;
+}
 header{
 	position: fixed;
 	top: 0;
@@ -13,7 +15,6 @@ header{
 	background-image: url("img/backgroundimg.jpg");
 	background-size: cover;
 	background-attachment:fixed;
-
 }
 .header_title{
 	text-align: center;
@@ -45,24 +46,8 @@ body {
 
 
 #container {
-	margin-left: 260px;
-	position: relative;
-	-moz-transition: margin-left .25s linear;
-	-webkit-transition: margin-left .25s linear;
-	transition: margin-left .25s linear;
+	margin-left: 0;
 }
-#main {
-	padding-top: 50px;
-	min-height: 1400px;
-}
-#main p {
-	margin-bottom: 1em;
-	line-height: 1.9;
-}
-#main .inner {
-	padding: 60px;
-}
-
 /* main-visual */
 #main-visual {
 	background: #64CE80;
@@ -119,11 +104,12 @@ h3 {
 	color: #afc3f2;
 	background: #033560;
 }
+.none{
+	display: none;
+}
 
 #brand-logo {
-	-webkit-transition: .35s ease-in-out;
-	-moz-transition: .35s ease-in-out;
-	transition: .35s ease-in-out;
+	margin-left: 50px;
 }
 
 #global-nav ul {
@@ -212,6 +198,7 @@ h3 {
 	top: 15px;
 	left: 15px;
 	height: 32px;
+	cursor: pointer;
 }
 #nav-toggle > div {
 	position: relative;
@@ -222,7 +209,7 @@ h3 {
 	height: 2px;
 	left: 0;
 	display: block;
-	background: #fff;
+	background: #033560;
 	position: absolute;
 	-webkit-transition: .35s ease-in-out;
 	-moz-transition: .35s ease-in-out;
@@ -282,18 +269,24 @@ h3 {
 	z-index: 900;
 }
 
-/* close */
-.close #container {
-	margin-left: 0;
+/* open */
+.open #container {
+	margin-left: 260px;
+	position: relative;
+	-moz-transition: margin-left .25s linear;
+	-webkit-transition: margin-left .25s linear;
+	transition: margin-left .25s linear;
 }
-.close #brand-logo {
-	margin-left: 50px;
+.open #brand-logo {
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
 }
-.close #nav-toggle span {
-	background: #033560;
+.open #nav-toggle span {
+	background: #fff;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 	#container {
 		margin-left: 0;
 	}
@@ -317,7 +310,7 @@ h3 {
 	.close #sidebar {
 		left: 0;
 	}
-}
+} */
 @media screen and (max-width: 400px) {
 
 }
@@ -367,6 +360,22 @@ main{
 .title a{
 	color: black;
 }
+.title_two{
+	font-size: 1.7rem;
+	margin: 20px 20px 0 20px;
+	text-align: center;
+}
+.title_two a{
+	color: black;
+}
+.sub_title{
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sub_title a{
+	color: black;
+}
 .logo_one{
 	width: 15%;
 	float: left;
@@ -380,7 +389,7 @@ main{
 .logo_three{
 	width: 30%;
 	float: left;
-	margin: 10px 10px 40px 10px;
+	margin: 10px 10px 15px 10px;
 }
 .text{
 	font-size: 1.2rem;
@@ -394,7 +403,6 @@ main{
 	text-align: right;
 }
 footer{
-	z-index: -1;
 	position: fixed;
     bottom: 0; 
     width: 100%;

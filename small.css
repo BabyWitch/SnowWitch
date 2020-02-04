@@ -284,14 +284,14 @@ h3 {
 	z-index: 900;
 }
 
-/* close */
-.close #container {
+/* open */
+.open #container {
 	margin-left: 0;
 }
-.close #brand-logo {
+.open #brand-logo {
 	margin-left: 50px;
 }
-.close #nav-toggle span {
+.open #nav-toggle span {
 	background: #033560;
 }
 
@@ -305,7 +305,7 @@ h3 {
 	#nav-toggle span {
 		background: #033560;
 	}
-	.close #nav-toggle span {
+	.open #nav-toggle span {
 		background: #fff;
 	}
 
@@ -316,7 +316,7 @@ h3 {
 		-moz-transition: .35s ease-in-out;
 		transition: .35s ease-in-out;
 	}
-	.close #sidebar {
+	.open #sidebar {
 		left: 0;
 	}
 }
