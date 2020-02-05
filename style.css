@@ -11,7 +11,6 @@ a{
 header{
 	position: fixed;
 	top: 0;
-	width: 100%;
 	background-image: url("img/backgroundimg.jpg");
 	background-size: cover;
 	background-attachment:fixed;
@@ -103,6 +102,9 @@ h3 {
 	position: fixed;
 	color: #afc3f2;
 	background: #033560;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
 }
 .none{
 	display: none;
@@ -286,7 +288,7 @@ h3 {
 	background: #fff;
 }
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 	#container {
 		margin-left: 0;
 	}
@@ -296,7 +298,7 @@ h3 {
 	#nav-toggle span {
 		background: #033560;
 	}
-	.close #nav-toggle span {
+	.open #nav-toggle span {
 		background: #fff;
 	}
 
@@ -307,10 +309,10 @@ h3 {
 		-moz-transition: .35s ease-in-out;
 		transition: .35s ease-in-out;
 	}
-	.close #sidebar {
+	.open #sidebar {
 		left: 0;
 	}
-} */
+} 
 @media screen and (max-width: 400px) {
 
 }
@@ -330,11 +332,11 @@ main{
 	padding-top: 100px;
 }
 .box{
-	margin: 0% 15% 5% 15%;
+	margin: 0% 15%;
 	padding: 40px;
 }
 .box_two{
-	margin: 0% 15% 5% 15%;
+	margin: 0% 15%;
 	padding: 40px;
 }
 .box_two a{
@@ -403,9 +405,9 @@ main{
 	text-align: right;
 }
 footer{
-	position: fixed;
-    bottom: 0; 
-    width: 100%;
+	width: 100%;
+	position: sticky;
+	bottom: 0; 
     text-align: right;
     background-image: url("img/backgroundimg.jpg");
 	background-size: cover;
@@ -413,12 +415,12 @@ footer{
 }
 footer p{
 	display: block;
-	margin: 30px 10px 0 10px;
+	padding: 30px 20px 0 10px;
 }
 i{
 	color: black;
 }
 footer a{
 	display: block;
-	margin: 0 10px 10px 10px;
+	padding: 0 20px 10px 10px;
 }
