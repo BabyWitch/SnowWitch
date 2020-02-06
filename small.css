@@ -53,64 +53,9 @@ body {
 	-webkit-transition: margin-left .25s linear;
 	transition: margin-left .25s linear;
 }
-#main {
-	padding-top: 50px;
-	min-height: 1400px;
-}
-#main p {
-	margin-bottom: 1em;
-	line-height: 1.9;
-}
+
 #main .inner {
 	padding: 60px;
-}
-
-/* main-visual */
-#main-visual {
-	background: #64CE80;
-	background: -webkit-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -moz-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -ms-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -o-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: linear-gradient(-45deg, #64CE80, #C68BC4);
-
-
-	height: 400px;
-	display: flex;
-
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-#main-visual h2 {
-	font-size: 21px;
-	color: #fff;
-}
-h3 {
-	font-size: 131%;
-	margin-bottom: .7em;
-}
-#copyright a {
-	color: #666;
-	text-decoration: none;
-}
-#copyright a:hover {
-	text-decoration: underline;
-}
-
-#global-head {
-	position: fixed;
-	color: #033560;
-	width: 100%;
-	padding: 10px 30px;
-	background: #fff;
-	display: -webkit-flex;
-	display: flex;
 }
 
 #sidebar {
@@ -120,12 +65,6 @@ h3 {
 	position: fixed;
 	color: #afc3f2;
 	background: #033560;
-}
-
-#brand-logo {
-	-webkit-transition: .35s ease-in-out;
-	-moz-transition: .35s ease-in-out;
-	transition: .35s ease-in-out;
 }
 
 #global-nav ul {
@@ -288,9 +227,6 @@ h3 {
 .open #container {
 	margin-left: 0;
 }
-.open #brand-logo {
-	margin-left: 50px;
-}
 .open #nav-toggle span {
 	background: #033560;
 }
@@ -298,9 +234,6 @@ h3 {
 @media screen and (max-width: 900px) {
 	#container {
 		margin-left: 0;
-	}
-	#brand-logo {
-		margin-left: 50px;
 	}
 	#nav-toggle span {
 		background: #033560;

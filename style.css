@@ -46,53 +46,9 @@ body {
 
 #container {
 	margin-left: 0;
-}
-/* main-visual */
-#main-visual {
-	background: #64CE80;
-	background: -webkit-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -moz-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -ms-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: -o-linear-gradient(-45deg, #64CE80, #C68BC4);
-	background: linear-gradient(-45deg, #64CE80, #C68BC4);
-
-
-	height: 400px;
-	display: flex;
-
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-#main-visual h2 {
-	font-size: 21px;
-	color: #fff;
-}
-h3 {
-	font-size: 131%;
-	margin-bottom: .7em;
-}
-#copyright a {
-	color: #666;
-	text-decoration: none;
-}
-#copyright a:hover {
-	text-decoration: underline;
-}
-
-#global-head {
-	position: fixed;
-	color: #033560;
-	width: 100%;
-	padding: 10px 30px;
-	background: #fff;
-	display: -webkit-flex;
-	display: flex;
+	-moz-transition: margin-left .25s linear;
+	-webkit-transition: margin-left .25s linear;
+	transition: margin-left .25s linear;
 }
 
 #sidebar {
@@ -108,10 +64,6 @@ h3 {
 }
 .none{
 	display: none;
-}
-
-#brand-logo {
-	margin-left: 50px;
 }
 
 #global-nav ul {
@@ -221,46 +173,46 @@ h3 {
 /* #nav-toggle close */
 #nav-toggle span:nth-child(1) {
 	top: 0;
-	/*
-	-webkit-transform: rotate(45deg);
+	
+	/* -webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
-	*/
+	transform: rotate(45deg); */
+	
 }
 #nav-toggle span:nth-child(2) {
 	top: 11px;
-	/*
-	width: 0;
-	left: 50%;
-	*/
+	
+	/* width: 0;
+	left: 50%; */
+	
 }
 #nav-toggle span:nth-child(3) {
 	top: 22px;
-	/*
-	-webkit-transform: rotate(-45deg);
+	
+	/* -webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	*/
+	transform: rotate(-45deg); */
+	
 }
 
-/*
-.close #nav-toggle span:nth-child(1) {
+/* 
+.open #nav-toggle span:nth-child(1) {
 	top: 0;
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	transform: rotate(0);
 }
-.close #nav-toggle span:nth-child(2) {
+.open #nav-toggle span:nth-child(2) {
 	width: 100%;
 	left: 0;
 }
-.close #nav-toggle span:nth-child(3) {
+.open #nav-toggle span:nth-child(3) {
 	top: 22px;
 	-webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	transform: rotate(0);
-}
-*/
+} */
+
 
 
 /* z-index */
@@ -275,15 +227,8 @@ h3 {
 .open #container {
 	margin-left: 260px;
 	position: relative;
-	-moz-transition: margin-left .25s linear;
-	-webkit-transition: margin-left .25s linear;
-	transition: margin-left .25s linear;
 }
-.open #brand-logo {
-	-webkit-transition: .35s ease-in-out;
-	-moz-transition: .35s ease-in-out;
-	transition: .35s ease-in-out;
-}
+
 .open #nav-toggle span {
 	background: #fff;
 }
@@ -291,10 +236,11 @@ h3 {
 @media screen and (max-width: 900px) {
 	#container {
 		margin-left: 0;
+		-moz-transition: margin-left .25s linear;
+		-webkit-transition: margin-left .25s linear;
+		transition: margin-left .25s linear;
 	}
-	#brand-logo {
-		margin-left: 50px;
-	}
+
 	#nav-toggle span {
 		background: #033560;
 	}
@@ -325,7 +271,7 @@ main{
 }
 #inner{
 	margin-top:-100px;
-	padding-top: 150px;
+	padding-top: 120px;
 }
 
 .button_aria{
