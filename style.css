@@ -46,9 +46,10 @@ body {
 
 #container {
 	margin-left: 0;
-	-moz-transition: margin-left .25s linear;
+	transition: all 0.2s;
+	/* -moz-transition: margin-left .25s linear;
 	-webkit-transition: margin-left .25s linear;
-	transition: margin-left .25s linear;
+	transition: margin-left .25s linear; */
 }
 
 #sidebar {
@@ -61,9 +62,7 @@ body {
 	-webkit-transition: .35s ease-in-out;
 	-moz-transition: .35s ease-in-out;
 	transition: .35s ease-in-out;
-}
-.none{
-	display: none;
+	z-index: -1;
 }
 
 #global-nav ul {
@@ -227,6 +226,10 @@ body {
 .open #container {
 	margin-left: 260px;
 	position: relative;
+	
+	/* -moz-transition: margin-left .25s linear;
+	-webkit-transition: margin-left .25s linear;
+	transition: margin-left .25s linear; */
 }
 
 .open #nav-toggle span {
@@ -273,7 +276,6 @@ main{
 	margin-top:-100px;
 	padding-top: 120px;
 }
-
 .button_aria{
 	padding-top: 100px;
 }
@@ -366,7 +368,9 @@ footer p{
 i{
 	color: black;
 }
+.mail{
+	padding-bottom: 10px;
+}
 footer a{
-	display: block;
-	padding: 0 20px 10px 10px;
+	padding: 0 20px 0 10px;
 }

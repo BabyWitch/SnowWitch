@@ -290,6 +290,22 @@ main{
 .title a{
 	color: black;
 }
+.title_two{
+	font-size: 1.8rem;
+	margin: 20px 20px 0 20px;
+	text-align: center;
+}
+.title_two a{
+	color: black;
+}
+.sub_title{
+	font-size: 1.4rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.sub_title a{
+	color: black;
+}
 .logo_center{
 	text-align: center;
 }
@@ -335,7 +351,9 @@ footer p{
 i{
 	color: black;
 }
+.mail{
+	padding-bottom: 10px;
+}
 footer a{
-	display: block;
-	margin: 0 10px 10px 10px;
+	margin: 0 10px 0px 10px;
 }
